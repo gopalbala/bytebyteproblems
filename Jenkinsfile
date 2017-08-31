@@ -15,7 +15,8 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 
    stage('Build') {
     //execGradle "clean build"
-      gradle clean build
+     // gradle clean build
+      sh "./gradlew clean build"
    }
    }
 def execGradle(args) {
