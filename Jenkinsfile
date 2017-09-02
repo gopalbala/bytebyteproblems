@@ -14,6 +14,15 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
    }
 
    stage('Build') {
-    execGradle "clean build"
+    //execGradle "clean build"
+     // gradle clean build
+      sh "./gradlew clean build"
    }
    }
+def execGradle(args) {
+      if (isUnix()) {
+        sh "'${env.GRADLE_HOME}/bin/gradle' ${args}"
+      } else {
+         bat " ${env.GRADLE_HOME}\\bin\\gradle ${args}"
+      }
+}
