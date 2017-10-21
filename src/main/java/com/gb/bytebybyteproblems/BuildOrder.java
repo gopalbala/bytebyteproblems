@@ -13,6 +13,7 @@ public class BuildOrder {
         Set<Integer> temperoaryMark = new HashSet<>();
         Set<Integer> permanentMark = new HashSet<>();
         List<Integer> result = new LinkedList<>();
+        System.out.println();
         for (int i = 0; i < processes.length; i++) {
             if (!permanentMark.contains(i)) {
                 visit(i, processes, temperoaryMark, permanentMark, result);
