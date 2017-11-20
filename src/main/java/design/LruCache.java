@@ -32,6 +32,7 @@ public class LruCache {
         } else {
             end = node.prev;
         }
+        capacity--;
     }
 
     void setHead(DllNode node) {
@@ -59,6 +60,7 @@ public class LruCache {
                 setHead(node);
             } else {
                 setHead(node);
+                capacity++;
             }
             map.put(key, node);
         }

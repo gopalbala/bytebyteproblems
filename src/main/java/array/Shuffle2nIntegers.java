@@ -18,7 +18,7 @@ public class Shuffle2nIntegers {
         if (l - f == 1)
             return;
         int mid = (f + l) / 2;
-        System.out.print(mid + " ");
+        //System.out.print(mid + " ");
         int temp = mid + 1;
         int mmid = (f + mid) / 2;
         System.out.print(mmid + "\n");
