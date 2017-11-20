@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by fax6 on 23/10/17.
+ * Created by gbalasubramanian on 23/10/17.
  */
 public class ArrayDivisiblePair {
     public static void main(String[] args) {
