@@ -1,5 +1,7 @@
 package design;
 
+import sun.jvm.hotspot.debugger.windbg.DLL;
+
 import java.util.HashMap;
 
 /**
@@ -51,6 +53,7 @@ public class LruCache {
         if (map.containsKey(key)) {
             DllNode old = map.get(key);
             old.value = value;
+            capacity++;
             remove(old);
             setHead(old);
         } else {
@@ -77,4 +80,5 @@ class DllNode {
         this.key = key;
         this.value = value;
     }
+
 }
