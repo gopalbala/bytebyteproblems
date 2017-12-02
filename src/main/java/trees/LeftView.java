@@ -1,7 +1,7 @@
 package trees;
 
 /**
- * Created by fax6 on 01/12/17.
+ * Created by gbalasubramanian on 01/12/17.
  */
 public class LeftView {
     public static void main(String[] args) {
