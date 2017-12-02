@@ -1,7 +1,7 @@
 package trees;
 
 /**
- * Created by fax6 on 22/11/17.
+ * Created by gbalasubramanian on 22/11/17.
  */
 public class BstFromArray {
     public static void main(String[] args) {

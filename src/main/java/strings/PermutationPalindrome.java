@@ -3,7 +3,7 @@ package strings;
 import java.util.Scanner;
 
 /**
- * Created by fax6 on 22/11/17.
+ * Created by gbalasubramanian on 22/11/17.
  */
 public class PermutationPalindrome {
     public static void main(String[] args) {

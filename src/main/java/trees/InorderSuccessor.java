@@ -1,7 +1,7 @@
 package trees;
 
 /**
- * Created by fax6 on 23/11/17.
+ * Created by gbalasubramanian on 23/11/17.
  */
 public class InorderSuccessor {
     public static void main(String[] args) {

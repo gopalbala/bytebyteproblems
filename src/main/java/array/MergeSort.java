@@ -1,7 +1,7 @@
 package array;
 
 /**
- * Created by fax6 on 20/11/17.
+ * Created by gbalasubramanian on 20/11/17.
  */
 public class MergeSort {
     static int[] arr;

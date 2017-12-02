@@ -1,7 +1,7 @@
 package array;
 
 /**
- * Created by fax6 on 18/11/17.
+ * Created by gbalasubramanian on 18/11/17.
  */
 public class SearchInSortedRotatedArray {
     public static void main(String[] args) {

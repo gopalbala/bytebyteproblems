@@ -3,7 +3,7 @@ package general;
 import java.util.Scanner;
 
 /**
- * Created by fax6 on 23/11/17.
+ * Created by gbalasubramanian on 23/11/17.
  */
 public class ClockAngle {
     public static void main(String[] args) {
