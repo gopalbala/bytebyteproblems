@@ -7,7 +7,9 @@ import java.util.Stack;
  */
 public class CheckBalancedBrackets {
     public static void main(String[] args) {
-
+        char exp[] = {'{','(',')','}','[',']'};
+        System.out.println(String.valueOf(exp));
+        System.out.println(checkBanlancedBrackets(String.valueOf(exp)));
     }
 
     static boolean checkBanlancedBrackets(String input) {

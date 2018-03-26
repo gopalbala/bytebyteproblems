@@ -10,6 +10,7 @@ public class CoinChange {
         int[] denominations = {1, 5, 10, 25};
         Arrays.sort(denominations);
         int min = change(32,denominations);
+        System.out.println(min);
     }
 
     public static int change(int amount, int[] coins) {
