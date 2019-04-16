@@ -1,5 +1,8 @@
 package array;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -11,6 +14,8 @@ public class ArrayDivisiblePair {
         int arr[] = {92, 75, 65, 48, 45, 35};
         int k = 10;
         System.out.println(checkPairs(arr, k));
+
+        System.out.println(LocalDate.now().format(DateTimeFormatter.ofPattern("ddMMYYYY")));
     }
 
     static boolean checkPairs(int[] arr, int k) {
@@ -47,4 +52,6 @@ public class ArrayDivisiblePair {
         }
         return true;
     }
+
+
 }

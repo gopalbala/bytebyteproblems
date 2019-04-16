@@ -5,8 +5,8 @@ package array;
  */
 public class KthLargest {
     public static void main(String[] args) {
-        int[] array = {3, 9, 7, 5, 4};
-        int elem = findKthLargest(array, 0, 4, 3);
+        int[] array = {10, 4, 5, 8, 6, 11, 26};//{3, 9, 7, 5, 4};
+        int elem = findKthLargest(array, 0, 6, 4);
         System.out.println(elem);
         int[] inp = {12, 11, 13, 5, 6, 7};
 
@@ -19,15 +19,15 @@ public class KthLargest {
     }
 
     public static int partition(int[] arr, int low, int high) {
-        int i = low;
+        int i;
         int j = low;
 
         int mid = (low + high) / 2;
         swap(arr, mid, high);
 
         for (i = low; i < high; i++) {
-            if (arr[i] <= arr[high]) {
-                swap(arr, j, i);
+            if (arr[i] > arr[high]) {
+                swap(arr, i, j);
                 j++;
             }
         }
@@ -39,6 +39,10 @@ public class KthLargest {
     static int findKthLargest(int[] arr, int low, int high, int k) {
         if (low < high) {
             int partition = partition(arr, low, high);
+            for (int i=0;i<arr.length;i++){
+                System.out.print(arr[i] + " ");
+            }
+            System.out.println();
             if (partition == k)
                 return arr[k - 1];
             else if (partition > k) {

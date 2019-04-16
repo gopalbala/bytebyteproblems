@@ -14,7 +14,7 @@ public class Solution {
         System.out.println(strings1);
     }
 
-    public  List<List<String>> groupStrings(String[] strings) {
+    public List<List<String>> groupStrings(String[] strings) {
         List<List<String>> result = new ArrayList<List<String>>();
         if (strings == null || strings.length == 0) {
             return result;

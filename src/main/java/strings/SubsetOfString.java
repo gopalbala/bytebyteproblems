@@ -14,8 +14,12 @@ public class SubsetOfString {
         int n = s.length() ;
         for (int i = 0; i < (1<<n); i++) {
             for (int j = 0; j < n; j++) {
+                //System.out.println("1<<J:"+ (i& (1<<j)));
                 if ((i & (1<<j)) > 0){
-                    System.out.print(chars[j]);
+
+                    System.out.print(chars[j] +" ");
+                }else {
+                    System.out.print((i & (1<<j))+":");
                 }
             }
             System.out.println();

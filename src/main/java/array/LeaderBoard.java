@@ -23,6 +23,8 @@ public class LeaderBoard {
             output[j++] = i1;
         }
 
+        Arrays.sort(alice);
+
         return output;
     }
 

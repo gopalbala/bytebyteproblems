@@ -1,6 +1,7 @@
 package array;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /**
  * Created by gbalasubramanian on 23/11/17.
@@ -15,6 +16,8 @@ public class HeapSort {
         for (int i = 1; i <= 5; i++) {
             push(i);
         }
+
+
         Arrays.sort(arr);
         for (int i = 0; i < 5; i++) {
             pop();
