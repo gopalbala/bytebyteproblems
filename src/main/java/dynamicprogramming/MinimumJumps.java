@@ -39,7 +39,7 @@ public class MinimumJumps {
 
         // Traverse through all the points
         // reachable from arr[l]. Recursively
-        // get the minimum number of jumps
+        // search the minimum number of jumps
         // needed to reach arr[h] from these
         // reachable points.
         int min = Integer.MAX_VALUE;

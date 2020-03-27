@@ -5,9 +5,9 @@ package trees;
  */
 public class BstFromArray {
     public static void main(String[] args) {
-        int[] a = {1,2,3,4,5,6};
+        int[] a = {1, 2, 3, 4, 5, 6};
         Bst bst = new Bst();
-        BstNode n = bst.constructTree(a,0,a.length-1);
+        BstNode n = bst.constructTree(a, 0, a.length - 1);
         bst.printInorder(n);
     }
 }
@@ -27,18 +27,16 @@ class Bst {
         if (start > end) {
             return null;
         }
-
-
         return node;
     }
-    public void printInorder(BstNode node){
+
+    public void printInorder(BstNode node) {
         if (node == null)
             return;
         printInorder(node.left);
         System.out.print(node.val + " ");
         printInorder(node.right);
     }
-
 }
 
 class BstNode {

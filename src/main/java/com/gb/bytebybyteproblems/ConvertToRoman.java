@@ -5,7 +5,7 @@ package com.gb.bytebybyteproblems;
  */
 public class ConvertToRoman {
     public static void main(String[] args) {
-        int number = 1231;
+        int number = 49;//1231;
         String romanNumber = convertToRoman(number);
         System.out.println(String.format("Roman Number equivalent of %d is %s",number,romanNumber));
     }

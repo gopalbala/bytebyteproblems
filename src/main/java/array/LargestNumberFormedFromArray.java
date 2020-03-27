@@ -16,14 +16,10 @@ public class LargestNumberFormedFromArray {
     }
 
     static void printLargest(List<String> inp) {
-        Collections.sort(inp, new Comparator<String>() {
-
-            @Override
-            public int compare(String o1, String o2) {
-                String o3 = o1 + o2;
-                String o4 = o2 + o1;
-                return o4.compareTo(o3);
-            }
+        Collections.sort(inp, (o1, o2) -> {
+            String o3 = o1 + o2;
+            String o4 = o2 + o1;
+            return o4.compareTo(o3);
         });
 
         for (String str : inp) {

@@ -25,7 +25,7 @@ public class CarApp {
 
         node.getChidren().get(1).getChidren().get(1).addChild(new CarNode(10));
 
-        //node.getChidren().get(0).addChild(new CarNode(4));
+        //node.getChidren().search(0).addChild(new CarNode(4));
 
         node.min(node,0);
 

@@ -55,7 +55,6 @@ public class LeaderBoard {
 
         //Arrays.sort(scores,Comparator.reverseOrder());
 
-
         int prev = 0;
         int rnk = 0;
 

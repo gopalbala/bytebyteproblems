@@ -36,7 +36,7 @@ public class Sort012 {
                 }
             }
         }
-        for (int i:arr) {
+        for (int i : arr) {
             System.out.print(i);
 
         }

@@ -44,7 +44,7 @@ public class LongestIncreasingSubsequence {
         // 'max_ending_here' is length of LIS ending with arr[n-1]
         int res, max_ending_here = 1;
 
-        /* Recursively get all LIS ending with arr[0], arr[1] ...
+        /* Recursively search all LIS ending with arr[0], arr[1] ...
            arr[n-2]. If   arr[i-1] is smaller than arr[n-1], and
            max ending with arr[n-1] needs to be updated, then
            update it */

@@ -10,7 +10,7 @@ public class RemoveAdjacentCharacters {
 
         for (int i = 0; i < str.length() - 1; i++) {
             if (str.charAt(i) == str.charAt(i + 1)) {
-                str = str.substring(0, i) + str.substring(i + 2, str.length());
+                str = str.substring(0, i) + str.substring(i + 2);
                 return dedup(str);
             }
         }
